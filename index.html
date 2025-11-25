@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazerati Consulting Network | Regulatory Compliance & Branding Experts</title>
+    <title>Mazerati Consulting Network | Regulatory Compliance & Certification</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-blue: #003366;
             --accent-gold: #D4AF37;
             --light-blue: #E6F2FF;
-            --medium-blue: #4A90E2;
             --dark-blue: #002244;
             --white: #FFFFFF;
             --light-gray: #F5F5F5;
@@ -133,7 +132,7 @@
         }
 
         .hero h2 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -224,211 +223,10 @@
             font-size: 1.4rem;
         }
 
-        .service-content ul {
-            list-style-type: none;
-            margin-top: 15px;
-        }
-
-        .service-content ul li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .service-content ul li::before {
-            content: "•";
-            color: var(--accent-gold);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-
-        /* About Section */
-        .about {
-            padding: 100px 0;
-            background-color: var(--white);
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h2 {
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-            font-size: 2.2rem;
-        }
-
-        .about-text p {
-            margin-bottom: 20px;
-        }
-
-        .about-image {
-            flex: 1;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            padding: 100px 0;
-            background-color: var(--light-blue);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background-color: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: """;
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 4rem;
-            color: var(--accent-gold);
-            opacity: 0.2;
-            font-family: Georgia, serif;
-        }
-
-        .testimonial-text {
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: var(--medium-gray);
-            margin-right: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-blue);
-            font-weight: bold;
-        }
-
-        .author-info h4 {
-            color: var(--primary-blue);
-            margin-bottom: 5px;
-        }
-
-        .author-info p {
-            color: var(--dark-gray);
-            font-size: 0.9rem;
-        }
-
-        /* FAQ Section */
-        .faq {
-            padding: 100px 0;
-            background-color: var(--white);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-            border: 1px solid var(--medium-gray);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .faq-question {
-            padding: 20px;
-            background-color: var(--light-gray);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            color: var(--primary-blue);
-        }
-
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            padding: 20px;
-            max-height: 500px;
-        }
-
-        .faq-toggle {
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .faq-toggle {
-            transform: rotate(180deg);
-        }
-
-        /* CTA Section */
-        .cta {
-            padding: 100px 0;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .cta p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .btn-light {
-            background-color: var(--white);
-            color: var(--primary-blue);
-        }
-
-        .btn-light:hover {
-            background-color: var(--light-gray);
-        }
-
         /* Contact Section */
         .contact {
             padding: 100px 0;
-            background-color: var(--light-gray);
+            background-color: var(--white);
         }
 
         .contact-container {
@@ -468,7 +266,7 @@
         }
 
         .contact-form {
-            background-color: var(--white);
+            background-color: var(--light-gray);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -568,17 +366,53 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .about-image {
-                order: -1;
-            }
+        /* Floating Social Media */
+        .floating-social {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999;
         }
 
+        .floating-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .floating-social a:hover {
+            transform: translateY(-5px);
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .facebook {
+            background-color: #3b5998;
+        }
+
+        .twitter {
+            background-color: #1DA1F2;
+        }
+
+        .linkedin {
+            background-color: #0077b5;
+        }
+
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .header-container {
                 padding: 15px 0;
@@ -611,6 +445,16 @@
             .hero h2 {
                 font-size: 2.2rem;
             }
+
+            .floating-social {
+                right: 10px;
+            }
+
+            .floating-social a {
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 576px) {
@@ -641,6 +485,22 @@
     </style>
 </head>
 <body>
+    <!-- Floating Social Media -->
+    <div class="floating-social">
+        <a href="https://wa.me/254723308658" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
@@ -655,9 +515,6 @@
                 <ul id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -668,7 +525,7 @@
     <section class="hero" id="home">
         <div class="container hero-content">
             <h2>Empowering Your Business With Regulatory Compliance, Branding & Certification Expertise</h2>
-            <p>Mazerati Consulting Network helps individuals and companies complete essential certification, branding, and compliance processes in Kenya with reliability, efficiency, and accuracy.</p>
+            <p>Reliable, efficient, and committed to delivering accurate documentation and fast results in Kenya.</p>
             <a href="#contact" class="btn">Get Started Today</a>
         </div>
     </section>
@@ -678,7 +535,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Our Services</h2>
-                <p>We provide comprehensive support for all your regulatory compliance, branding, and certification needs in Kenya.</p>
+                <p>Comprehensive support for all your regulatory compliance, branding, and certification needs.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card fade-in">
@@ -687,7 +544,7 @@
                     </div>
                     <div class="service-content">
                         <h3>Name Search Facilitation</h3>
-                        <p>Assistance with business name search and verification to ensure your desired business name is available and compliant with Kenyan regulations.</p>
+                        <p>Business name search and verification assistance.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
@@ -696,12 +553,7 @@
                     </div>
                     <div class="service-content">
                         <h3>KIPI Services</h3>
-                        <p>Complete support for intellectual property protection through Kenya Industrial Property Institute:</p>
-                        <ul>
-                            <li>Trademark registration</li>
-                            <li>Service mark registration</li>
-                            <li>Intellectual property protection support</li>
-                        </ul>
+                        <p>Trademark, service mark registration and intellectual property protection.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
@@ -710,12 +562,7 @@
                     </div>
                     <div class="service-content">
                         <h3>Branding Support</h3>
-                        <p>Professional design services to establish your brand identity:</p>
-                        <ul>
-                            <li>Business logo design</li>
-                            <li>Artwork and product label design</li>
-                            <li>Brand identity development</li>
-                        </ul>
+                        <p>Professional logo, artwork, and product label design.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
@@ -724,14 +571,7 @@
                     </div>
                     <div class="service-content">
                         <h3>KIMS Application Assistance</h3>
-                        <p>Support with KEBS Compliance Certification including:</p>
-                        <ul>
-                            <li>Fortification Mark</li>
-                            <li>Diamond Mark</li>
-                            <li>Standardization Mark</li>
-                            <li>Import Standardization Mark</li>
-                            <li>Calibration Mark</li>
-                        </ul>
+                        <p>KEBS Compliance Certification including Fortification, Diamond, and Standardization Marks.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
@@ -740,141 +580,10 @@
                     </div>
                     <div class="service-content">
                         <h3>HACCP Documentation</h3>
-                        <p>Preparation of comprehensive HACCP files and food safety plans:</p>
-                        <ul>
-                            <li>HACCP documentation</li>
-                            <li>Food safety plans</li>
-                            <li>Certification-ready documents</li>
-                        </ul>
+                        <p>HACCP files, food safety plans, and certification-ready documents.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Mazerati Consulting Network</h2>
-                    <p>Mazerati Consulting Network is a professional firm dedicated to helping individuals and companies navigate the complex landscape of regulatory compliance, branding, and certification processes in Kenya.</p>
-                    <p>With years of experience and deep understanding of Kenyan regulatory frameworks, we provide reliable, efficient services that deliver accurate documentation and fast results for our clients.</p>
-                    <p>Our team of experts is committed to empowering your business by handling the intricate details of certification and compliance, allowing you to focus on growing your enterprise.</p>
-                    <a href="#contact" class="btn">Consult With Our Experts</a>
-                </div>
-                <div class="about-image">
-                    <!-- This would be an image in a real implementation -->
-                    <div style="width:100%; height:400px; background:linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%); display:flex; align-items:center; justify-content:center; color:white; font-size:1.5rem;">
-                        Professional Business Image
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Client Testimonials</h2>
-                <p>See what our clients have to say about our services and expertise.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        "Mazerati Consulting made the trademark registration process incredibly smooth. Their expertise saved us time and potential legal issues. Highly recommended!"
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JK</div>
-                        <div class="author-info">
-                            <h4>James Kariuki</h4>
-                            <p>CEO, AgriSolutions Ltd.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        "Their assistance with KEBS certification was invaluable. We got our standardization mark in record time thanks to their efficient process."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SN</div>
-                        <div class="author-info">
-                            <h4>Sarah Njeri</h4>
-                            <p>Founder, PureFoods Kenya</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-text">
-                        "The branding support we received was exceptional. Our new logo and product labels have significantly improved our market presence."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">DM</div>
-                        <div class="author-info">
-                            <h4>David Mwangi</h4>
-                            <p>Managing Director, TechInnovate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-                <p>Find answers to common questions about our services and processes.</p>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        How long does the business name registration process take?
-                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        The business name registration process typically takes 3-5 business days once all required documents are submitted. We expedite the process by ensuring your application is complete and accurate before submission.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        What documents are required for trademark registration?
-                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        For trademark registration, you'll need a clear representation of your trademark, details of the applicant (individual or company), a list of goods/services the trademark will cover, and proof of payment for the application fee.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        What is the difference between the Diamond Mark and Standardization Mark?
-                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        The Diamond Mark is a quality certification mark issued by KEBS for locally manufactured products that meet Kenyan standards. The Standardization Mark is for products that comply with Kenyan standards but may be manufactured locally or imported.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Do you provide support for international businesses seeking certification in Kenya?
-                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        Yes, we assist both local and international businesses with certification and compliance processes in Kenya. We can help navigate the specific requirements for imported products and facilitate communication with relevant Kenyan authorities.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Streamline Your Compliance Process?</h2>
-            <p>Let our experts handle your regulatory compliance, branding, and certification needs so you can focus on growing your business.</p>
-            <a href="#contact" class="btn btn-light">Request Service Now</a>
         </div>
     </section>
 
@@ -883,7 +592,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact Us</h2>
-                <p>Get in touch with our team to discuss your specific needs and how we can assist you.</p>
+                <p>Get in touch with our team for professional assistance.</p>
             </div>
             <div class="contact-container">
                 <div class="contact-info">
@@ -893,8 +602,16 @@
                         </div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p>+254 700 123 456</p>
-                            <p>+254 711 987 654</p>
+                            <p>+254 723 308658</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+254 723 308658</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -904,17 +621,6 @@
                         <div class="contact-details">
                             <h3>Email</h3>
                             <p>info@mazeraticonsulting.co.ke</p>
-                            <p>support@mazeraticonsulting.co.ke</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>WhatsApp</h3>
-                            <p>+254 700 123 456</p>
-                            <p>Quick responses during business hours</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -924,7 +630,6 @@
                         <div class="contact-details">
                             <h3>Location</h3>
                             <p>Nairobi, Kenya</p>
-                            <p>Consultations available by appointment</p>
                         </div>
                     </div>
                 </div>
@@ -951,7 +656,6 @@
                                 <option value="branding">Branding Support</option>
                                 <option value="kims">KIMS Application Assistance</option>
                                 <option value="haccp">HACCP Documentation</option>
-                                <option value="multiple">Multiple Services</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -984,17 +688,15 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="#">Name Search Facilitation</a></li>
+                        <li><a href="#">Name Search</a></li>
                         <li><a href="#">KIPI Services</a></li>
-                        <li><a href="#">Branding Support</a></li>
+                        <li><a href="#">Branding</a></li>
                         <li><a href="#">KIMS Application</a></li>
                         <li><a href="#">HACCP Documentation</a></li>
                     </ul>
@@ -1002,9 +704,9 @@
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul>
-                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-phone"></i> +254 723 308658</li>
+                        <li><i class="fab fa-whatsapp"></i> +254 723 308658</li>
                         <li><i class="fas fa-envelope"></i> info@mazeraticonsulting.co.ke</li>
-                        <li><i class="fab fa-whatsapp"></i> +254 700 123 456</li>
                         <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
                     </ul>
                 </div>
@@ -1019,15 +721,6 @@
         // Mobile Menu Toggle
         document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
             document.getElementById('nav-menu').classList.toggle('show');
-        });
-
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                item.classList.toggle('active');
-            });
         });
 
         // Scroll Animation
