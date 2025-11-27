@@ -32,6 +32,11 @@
             background-color: var(--white);
             color: var(--dark-gray);
             line-height: 1.6;
+            /* Prevent text selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         .container {
@@ -221,6 +226,49 @@
             color: var(--primary-blue);
             margin-bottom: 15px;
             font-size: 1.4rem;
+        }
+
+        /* Reels Section */
+        .reels {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .reels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .reel-card {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .reel-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .reel-placeholder {
+            background-color: var(--primary-blue);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .reel-content {
+            padding: 20px;
+        }
+
+        .reel-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 10px;
         }
 
         /* Contact Section */
@@ -515,6 +563,7 @@
                 <ul id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#reels">Why Choose Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -587,6 +636,45 @@
         </div>
     </section>
 
+    <!-- Reels Section -->
+    <section class="reels" id="reels">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+                <p>Discover how we make regulatory compliance easier for manufacturers</p>
+            </div>
+            <div class="reels-grid">
+                <div class="reel-card fade-in">
+                    <div class="reel-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="reel-content">
+                        <h3>Streamlined Compliance Process</h3>
+                        <p>Learn how we simplify complex regulatory requirements for manufacturers.</p>
+                    </div>
+                </div>
+                <div class="reel-card fade-in">
+                    <div class="reel-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="reel-content">
+                        <h3>Time-Saving Solutions</h3>
+                        <p>Discover how our expertise saves you time and resources.</p>
+                    </div>
+                </div>
+                <div class="reel-card fade-in">
+                    <div class="reel-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="reel-content">
+                        <h3>Expert Guidance</h3>
+                        <p>See how our consultants navigate regulatory challenges efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -620,7 +708,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <p>info@mazeraticonsulting.co.ke</p>
+                            <p>mazeraticonsultingnetwork@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -629,7 +717,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Location</h3>
-                            <p>Nairobi, Kenya</p>
+                            <p>Kimathi Street - Old Mutual Building, Nairobi, Kenya</p>
                         </div>
                     </div>
                 </div>
@@ -688,6 +776,7 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#reels">Why Choose Us</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -706,8 +795,8 @@
                     <ul>
                         <li><i class="fas fa-phone"></i> +254 723 308658</li>
                         <li><i class="fab fa-whatsapp"></i> +254 723 308658</li>
-                        <li><i class="fas fa-envelope"></i> info@mazeraticonsulting.co.ke</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-envelope"></i> mazeraticonsultingnetwork@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kimathi Street - Old Mutual Building, Nairobi</li>
                     </ul>
                 </div>
             </div>
@@ -769,6 +858,55 @@
                     document.getElementById('nav-menu').classList.remove('show');
                 }
             });
+        });
+
+        // Source Code Protection
+        // Disable right-click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable keyboard shortcuts for viewing source
+        document.addEventListener('keydown', function(e) {
+            // Disable F12
+            if(e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Disable Ctrl+U (View source)
+            if(e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Disable Ctrl+Shift+I (Developer Tools)
+            if(e.ctrlKey && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Disable Ctrl+Shift+J (Developer Tools - Console)
+            if(e.ctrlKey && e.shiftKey && e.key === 'J') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Disable Ctrl+Shift+C (Developer Tools - Inspect)
+            if(e.ctrlKey && e.shiftKey && e.key === 'C') {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+
+        // Additional protection: disable drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
         });
     </script>
 </body>
