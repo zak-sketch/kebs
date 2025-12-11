@@ -1,0 +1,10 @@
+# robots.txt for mazerati.co.ke
+
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Allow: /
+
+# Link to sitemap(s)
+Sitemap: https://www.mazerati.co.ke/sitemap.xml
